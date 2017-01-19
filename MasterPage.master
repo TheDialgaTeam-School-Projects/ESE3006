@@ -1,0 +1,136 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table style = "width:100%">
+                <tr>
+                    <td style="background-color: #001D43; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 50pt; font-weight: bold; font-style: italic; color: #FF6600;">
+                        <asp:HyperLink ID="HyperLink1" runat="server" ImageUrl="~/Images/d81a711a1ca06f3db674f25e3a8d269d.jpg">HyperLink</asp:HyperLink>
+                        JAS Torch Holders</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">
+                       <ul>
+                        <li><a href="#home">Home</a></li>
+                           
+                        <li class="dropdown">
+                            <a href="#" class="dropbtn">About Us</a>
+                            <div class="dropdown-content">
+                                <a href="#">Our Story</a>
+                                <a href="#">Our Family</a>
+                                <a href="#">Organizational Support</a>
+                                <a href="#">Our Goal</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                         <a href="#" class="dropbtn">Contact Us</a>
+                             <div class="dropdown-content">
+                                   <a href="#">Enquiries</a>
+                                   <a href="#">Ideas For Education</a>
+                                   <a href="#">Feedback</a>                                
+                             </div>
+                        </li>
+                           <li class="dropdown">
+                         <a href="#" class="dropbtn">Reasons to Act</a>
+                             <div class="dropdown-content">
+                                   <a href="#">Importance of Education</a>
+                                   <a href="#">For the Present and Future</a>
+                                   <a href="#">Steps to Take</a>                                
+                             </div>
+                        </li>
+                           <li class="dropdown">
+                         <a href="#" class="dropbtn">What We Do</a>
+                             <div class="dropdown-content">
+                                   <a href="#">Events</a>
+                                   <a href="#">News</a>
+                                   <a href="#">Goals Report</a>                                
+                             </div>
+                        </li>
+                           <li class="dropdown">
+                         <a href="#" class="dropbtn">Lend a Helping Hand</a>
+                             <div class="dropdown-content">
+                                   <a href="#">Petition</a>
+                                   <a href="#">Upcoming Events</a>
+                                   <a href="#">Share</a>                          
+                             </div>
+                        </li>
+                           <li class="dropdown">
+                         <a href="#" class="dropbtn">Profile</a>
+                             <div class="dropdown-content">
+                                   <a href="#">Update Profile</a>                       
+                             </div>
+                        </li>
+                           <li><a href="#FAQs">FAQs</a></li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
