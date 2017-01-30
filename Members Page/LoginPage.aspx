@@ -36,7 +36,7 @@
     </table>
     <br />
     <asp:Button ID="btnLogin" runat="server" Text="Login" />
-    <asp:Button ID="btnForgetPassword" runat="server" Text="Forget Password?" />
-    <asp:Button ID="btnRegister" runat="server" Text="Register" 
-        onclick="btnRegister_Click" />
+    <asp:Button ID="btnForgetPassword" runat="server" Text="Forget Password?" OnClick="btnForgetPassword_Click" />
+    <asp:Button ID="btnRegister" runat="server" Text="Register"
+        OnClick="btnRegister_Click" />
 </asp:Content>

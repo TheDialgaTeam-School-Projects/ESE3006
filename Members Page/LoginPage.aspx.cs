@@ -16,4 +16,9 @@ public partial class LoginPage : System.Web.UI.Page
     {
         Response.Redirect("~/Members Page/RegisterPage.aspx");
     }
+
+    protected void btnForgetPassword_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/Members Page/ForgetPassword.aspx");
+    }
 }
