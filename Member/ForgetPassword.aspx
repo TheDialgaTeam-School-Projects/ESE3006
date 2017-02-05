@@ -1,19 +1,21 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="ForgetPassword.aspx.cs" Inherits="Members_Page_ForgetPassword" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="ForgetPassword.aspx.cs" Inherits="Member_ForgetPassword" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <style type="text/css">
         .auto-style1 {
             width: 100%;
         }
     </style>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
+<asp:Content ID="Content2" ContentPlaceHolderID="body" runat="Server">
     <div>
         <asp:ScriptManager ID="ScriptManager1" runat="server">
         </asp:ScriptManager>
         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
             <ContentTemplate>
-                Forget Password?<br /> Don&#39;t worry, please enter your username and email to retrive your password.<br />
+                Forget Password?<br />
+                Don&#39;t worry, please enter your username and email to retrive your password.<br />
                 <br />
                 <table class="auto-style1">
                     <tr>
@@ -29,6 +31,7 @@
                         </td>
                     </tr>
                 </table>
+                <br />
                 <asp:Label ID="txt_Status" runat="server"></asp:Label>
                 <br />
                 <br />
@@ -38,4 +41,3 @@
         </asp:UpdatePanel>
     </div>
 </asp:Content>
-

@@ -1,10 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true"
-    CodeFile="LoginPage.aspx.cs" Inherits="LoginPage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="LoginPage.aspx.cs" Inherits="Member_LoginPage" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <title>Login Page</title>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+
+<asp:Content ID="Content2" ContentPlaceHolderID="body" runat="Server">
     <asp:Label ID="Label1" runat="server" Font-Bold="True" Text="Member / Admin Login:"></asp:Label>
     <br />
     <br />
@@ -35,8 +35,10 @@
         </tr>
     </table>
     <br />
-    <asp:Button ID="btnLogin" runat="server" Text="Login" />
+    <asp:Label ID="txtError" runat="server" ForeColor="Red"></asp:Label>
+    <br />
+    <br />
+    <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" />
     <asp:Button ID="btnForgetPassword" runat="server" Text="Forget Password?" OnClick="btnForgetPassword_Click" />
-    <asp:Button ID="btnRegister" runat="server" Text="Register"
-        OnClick="btnRegister_Click" />
+    <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click" />
 </asp:Content>

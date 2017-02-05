@@ -1,9 +1,13 @@
-﻿using System;
+﻿using Modules.System.Web.UI.WebControls;
+using System;
+using System.Web.UI;
 
-public partial class Members_Page_RegisterComplete : System.Web.UI.Page
+public partial class Member_RegisterComplete : Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        MenuHelper.InitNavigationBar(Master, "Login");
+
         if (!Page.IsPostBack)
             Session["PAGE_TIMER"] = 0;
     }
@@ -14,7 +18,7 @@ public partial class Members_Page_RegisterComplete : System.Web.UI.Page
         Session["PAGE_TIMER"] = ++pageTime;
 
         if (pageTime >= 5)
-            Response.Redirect("~/Members Page/LoginPage.aspx");
+            Response.Redirect("~/Member/LoginPage.aspx");
         else
             txtRemainingTime.Text = (5 - pageTime).ToString();
     }
