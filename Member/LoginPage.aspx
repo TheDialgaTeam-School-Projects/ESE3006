@@ -22,21 +22,17 @@
                 <asp:Label ID="Label3" runat="server" Text="Password:"></asp:Label>
             </td>
             <td>
-                <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td>
-                <asp:Label ID="Label4" runat="server" Text="Remember Me:"></asp:Label>
-            </td>
+                &nbsp;</td>
             <td>
-                <asp:CheckBox ID="cbRememberMe" runat="server" />
+    <asp:Label ID="txtError" runat="server" ForeColor="Red"></asp:Label>
             </td>
         </tr>
     </table>
-    <br />
-    <asp:Label ID="txtError" runat="server" ForeColor="Red"></asp:Label>
-    <br />
     <br />
     <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" />
     <asp:Button ID="btnForgetPassword" runat="server" Text="Forget Password?" OnClick="btnForgetPassword_Click" />

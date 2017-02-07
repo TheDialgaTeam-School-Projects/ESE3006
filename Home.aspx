@@ -4,4 +4,6 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="Server">
+    <div style="text-align: center; font-size: large; font-style: italic; font-family: 'Comic Sans MS';">
+        Welcome to JAS Torch Holders</div>
 </asp:Content>

@@ -80,7 +80,7 @@
                                     <asp:MenuItem Text="Share the word" Value="Share the word"></asp:MenuItem>
                                 </asp:MenuItem>
                                 <asp:MenuItem Text="Your Profile" Value="Your Profile">
-                                    <asp:MenuItem Text="Update Particulars" Value="Update Particulars"></asp:MenuItem>
+                                    <asp:MenuItem Text="Update Particulars" Value="Update Particulars" NavigateUrl="~/Member/Profile.aspx"></asp:MenuItem>
                                 </asp:MenuItem>
                                 <asp:MenuItem Text="FAQ" Value="FAQ"></asp:MenuItem>
                                 <asp:MenuItem NavigateUrl="~/Member/LoginPage.aspx" Text="Login/Register" Value="Login"></asp:MenuItem>
