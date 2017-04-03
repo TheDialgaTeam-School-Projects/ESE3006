@@ -1,5 +1,6 @@
 ﻿using Modules.System;
 using Modules.System.Data.SqlClient;
+using Modules.System.Web.UI.WebControls;
 using System;
 using System.Data.SqlClient;
 using System.IO;
@@ -9,6 +10,8 @@ public partial class Member_Profile : Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        MenuHelper.InitNavigationBar(Master, "Your Profile/Update Particulars");
+
         if (!Page.IsPostBack)
         {
             if (Session["Account.IsLoggedIn"] != null && Session["Account.IsLoggedIn"].ToString() == "1")
@@ -20,7 +23,7 @@ public partial class Member_Profile : Page
                         Reader.Read();
                         txtName.Text = Reader["Username"].ToString();
                         txtEmail.Text = Reader["Email"].ToString();
-                        Avatar.ImageUrl = "~/Images/" + Reader["Avatar"].ToString();
+                        Avatar.ImageUrl = "~/Images/Avatar/" + Reader["Avatar"].ToString();
                     }
                 }
             }
@@ -38,7 +41,7 @@ public partial class Member_Profile : Page
                 try
                 {
                     string fileName = "Avatar_" + txtName.Text + Path.GetExtension(FileUpload1.FileName);
-                    FileUpload1.SaveAs(Server.MapPath("~/Images/" + fileName));
+                    FileUpload1.SaveAs(Server.MapPath("~/Images/Avatar/" + fileName));
                     using (SqlClientHelper sql = new SqlClientHelper())
                         sql.Query("update Account set Avatar = @Avatar where Username = @Username", fileName, txtName.Text);
                 }

@@ -21,7 +21,6 @@
             <td>
                 <asp:TextBox ID="txtName" runat="server" ReadOnly="True"></asp:TextBox>
             </td>
-            <td>&nbsp;</td>
         </tr>
         <tr>
             <td>
@@ -30,7 +29,6 @@
             <td>
                 <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
             </td>
-            <td>&nbsp;</td>
         </tr>
         <tr>
             <td>
@@ -39,13 +37,11 @@
             <td>
                 <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
             </td>
-            <td>&nbsp;</td>
         </tr>
         <tr>
             <td>&nbsp;</td>
             <td>
                 &nbsp;</td>
-            <td>&nbsp;</td>
         </tr>
         <tr>
             <td>Avatar:</td>
@@ -55,7 +51,6 @@
                 <asp:Button ID="btnUpload" runat="server" Text="Upload" OnClick="btnUpload_Click" />
                 <asp:Label ID="txtUploadStatus" runat="server"></asp:Label>
             </td>
-            <td>&nbsp;</td>
         </tr>
     </table>
     <br />

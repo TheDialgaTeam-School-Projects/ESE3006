@@ -75,7 +75,7 @@
                                     <asp:MenuItem Text="Goals Report" Value="Goals Report"></asp:MenuItem>
                                 </asp:MenuItem>
                                 <asp:MenuItem Text="Lend A Helping Hand" Value="Lend A Helping Hand">
-                                    <asp:MenuItem Text="Petition " Value="Petition "></asp:MenuItem>
+                                    <asp:MenuItem Text="Petition" Value="Petition" NavigateUrl="~/Lend A Helping Hand/Petition.aspx"></asp:MenuItem>
                                     <asp:MenuItem Text="Coming Events" Value="Coming Events"></asp:MenuItem>
                                     <asp:MenuItem Text="Share the word" Value="Share the word"></asp:MenuItem>
                                 </asp:MenuItem>

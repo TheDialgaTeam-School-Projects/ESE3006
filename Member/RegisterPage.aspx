@@ -30,6 +30,7 @@
                     </td>
                     <td>
                         <asp:TextBox ID="txtPassword" runat="server" Width="100%" MaxLength="50" TextMode="Password"></asp:TextBox>
+                        <ajaxToolkit:PasswordStrength ID="txtPassword_PasswordStrength" runat="server" BehaviorID="txtPassword_PasswordStrength" CalculationWeightings="50;15;15;20" PreferredPasswordLength="10" TargetControlID="txtPassword" TextStrengthDescriptions="Very Poor;Weak;Average;Strong;Excellent" />
                     </td>
                     <td style="padding-left: 10px">
                         <asp:Label ID="lbl_password_status" runat="server" Font-Bold="True" ForeColor="Red"></asp:Label>
